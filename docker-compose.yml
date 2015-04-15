@@ -1,0 +1,4 @@
+web:
+    build: .
+    volumes: 
+     - /home/builduser/.m2/repository:/root/.m2/repository  
