@@ -1,5 +1,7 @@
 FROM maven
-RUN sudo apt-get install build-essential
+RUN apt-get update
+RUN apt-get install -y make
+RUN apt-get install  -y build-essential
 RUN \
   cd /tmp && \
   wget http://nodejs.org/dist/node-latest.tar.gz && \
