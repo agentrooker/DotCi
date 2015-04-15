@@ -1,2 +1,4 @@
 run: 
   test:
+plugins:
+  - artifacts: 'target/DotCi.jpi'
