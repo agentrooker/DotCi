@@ -1,5 +1,5 @@
 FROM maven
-sudo yum install build-essential
+RUN sudo apt-get install build-essential
 RUN \
   cd /tmp && \
   wget http://nodejs.org/dist/node-latest.tar.gz && \
