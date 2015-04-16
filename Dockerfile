@@ -14,8 +14,7 @@ RUN \
   cd /tmp && \
   rm -rf /tmp/node-v* && \
   npm install -g npm && \
-  printf '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc && \
-  source /root/.bashrc
+  printf '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 WORKDIR /code
 ADD . /code
 CMD mvn install
